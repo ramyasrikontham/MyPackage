@@ -4,6 +4,15 @@
 import Firebase
 
 public class FirebaseAuthManager {
+    
+    var email: String
+    var password : String
+    
+    init(with email: String, password: String) {
+        self.email = email
+        self.password = password
+
+    }
     public func singIn(with email: String, password:String) {
         Auth.auth().signIn(withEmail: email, password: password) {result, error in
 
