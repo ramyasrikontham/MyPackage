@@ -5,10 +5,10 @@ import Firebase
 
 public class FirebaseAuthManager {
     
-    var email: String
-    var password : String
+   public var email: String
+   public var password : String
     
-    init(with email: String, password: String) {
+   public init(with email: String, password: String) {
         self.email = email
         self.password = password
 
